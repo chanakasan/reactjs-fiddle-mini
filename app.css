@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Comic Sans MS, Helvetica Nue, Verdana, sans-serif;
+  color: #000;
+  background: green;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#root {
+  overflow: hidden;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>A ReactJS Fiddle</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- js libs -->
+  <script src="vendor/babel-standalone-7.9.6.min.js"></script>
+  <script src="vendor/react.development.js" crossorigin></script>
+  <script src="vendor/react-dom.development.js" crossorigin></script>
+  <script src="vendor/styled-components.js" crossorigin></script>
+  <script>
+    Babel.registerPreset("my-preset", {
+      presets: [
+        [Babel.availablePresets["es2015"], { "modules": false }],
+        [Babel.availablePresets["react"]]
+      ],
+      plugins: [
+        Babel.availablePlugins["transform-modules-umd"],
+      ],
+    });
+  </script>
+  <!-- end js libs -->
+
+  <!-- app js -->
+  <script type="text/babel" data-presets="my-preset" src="app.js"></script>
+  <!-- end app js -->
+</body>
+</html>
